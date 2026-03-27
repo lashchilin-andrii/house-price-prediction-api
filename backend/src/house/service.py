@@ -7,7 +7,7 @@ from backend.src.house.schema import HouseData, PredictionResponse
 from backend.src.http_code import ExpectationFailed417
 
 current_path = Path(__file__).parent
-model_path = current_path / "model.pkl"
+model_path = current_path / "static" / "model.pkl"
 
 with model_path.open("rb") as f:
     model = pickle.load(f)
