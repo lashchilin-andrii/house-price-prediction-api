@@ -68,6 +68,13 @@ class NotFound404(APIException):
         super().__init__(404, detail)
 
 
+class ExpectationFailed417(APIException):
+    """417: Expectation Failed."""
+
+    def __init__(self, detail: str = "Expectation Failed") -> None:
+        super().__init__(417, detail)
+
+
 class UnprocessableEntity422(APIException):
     """422: Unprocessable Entity."""
 

@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend import headers, main_router, methods, origins
 
+from backend import headers, main_router, methods, origins
 
 app = FastAPI(title="House prices prediction API")
 
@@ -17,4 +17,3 @@ app.add_middleware(
 app.include_router(
     main_router,
 )
-

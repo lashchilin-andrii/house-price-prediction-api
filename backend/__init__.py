@@ -2,7 +2,7 @@
 
 from fastapi import APIRouter
 
-from backend.src.house.endpoint import router as books_router
+from backend.src.house.endpoint import router as house_router
 
 origins = [
     "http://localhost",
@@ -21,4 +21,4 @@ headers = [
 ]
 
 main_router = APIRouter()
-main_router.include_router(books_router)
+main_router.include_router(house_router)

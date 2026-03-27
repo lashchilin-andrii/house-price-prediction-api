@@ -6,8 +6,8 @@ from httpx import ASGITransport, AsyncClient
 from pytest_asyncio import is_async_test
 from sqlalchemy.ext.asyncio import create_async_engine
 
-from backend.src.config import DatabaseConfig
 from backend.main import app
+from backend.src.config import DatabaseConfig
 from backend.src.database import BaseAlchemyModel
 
 
